@@ -1,0 +1,14 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "mcp": {
+        "led-matrix-server": {
+            "description": "Controls an 8-row x 13-column (104 pixels) Arduino UNO Q LED matrix. For shapes use draw_rectangle(x, y, width, height). Use draw_led_matrix only when you have exactly 104 pixel values in row-major order (index = row*13 + col).",
+        "type": "local",
+        "command": ["uv",  "run", "server.py"],
+        "enabled": true,
+        "environment": {
+            "MCU_GRPC_TARGET": "192.168.178.188:50051"
+        }
+    }
+    }
+}

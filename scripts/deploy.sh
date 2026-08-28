@@ -1,4 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
 # Upload firmware to Arduino Uno Q1 MCU
+
 USER=arduino
 IP=192.168.178.188
 
@@ -7,4 +11,4 @@ IP=192.168.178.188
 ssh $USER@$IP mkdir -p /tmp/firmware/
 scp -r build/install/. $USER@$IP:/tmp/firmware/
 
-# Once deployed, call `arduino-cli upload -b arduino:zephyr:unoq -i ino_hello/`
+# Once deployed, call `arduino-cli upload -b arduino:zephyr:unoq -i ino_hello/` to flash the MCU firmware.

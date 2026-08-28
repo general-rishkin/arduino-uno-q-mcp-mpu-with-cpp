@@ -13,6 +13,18 @@
         "isDefault": true
       },
       "problemMatcher": []
+    },
+    {
+      "label": "Build Docker Image",
+      "type": "shell",
+      "command": "./scripts/build_docker.sh",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build"
+      },
+      "problemMatcher": []
     }
   ]
 }

@@ -8,21 +8,24 @@
     },
     "customizations": {
         "vscode": {
-    "extensions": [
-        "llvm-vs-code-extensions.vscode-clangd",
-        "ms-vscode.cpptools-extension-pack",
-        "cschlosser.doxdocgen",
-        "DrBlury.protobuf-vsc"
-    ],
-    "settings": {
-        "files.associations": {
-            "*.ino": "cpp"
-        },
-        "C_Cpp.intelliSenseEngine": "disabled",
-        "clangd.arguments": [
-            "--header-insertion=never"
-        ]
-    }
-}
-}
+            "extensions": [
+                "llvm-vs-code-extensions.vscode-clangd",
+                "ms-vscode.cpptools-extension-pack",
+                "cschlosser.doxdocgen",
+                "DrBlury.protobuf-vsc"
+            ],
+            "settings": {
+                "files.associations": {
+                    "*.ino": "cpp"
+                },
+                "C_Cpp.intelliSenseEngine": "disabled",
+                "clangd.arguments": [
+                    "--header-insertion=never"
+                ]
+            }
+        }
+    },
+    "mounts": [
+        "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+    ]
 }
