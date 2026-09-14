@@ -7,7 +7,7 @@
 #include <thread>
 
 namespace {
-constexpr const char *g_ledPath = "/sys/class/leds/unoq:user-green1/brightness";
+constexpr const char *g_ledPath = "/sys/class/leds/red:user/brightness";
 
 bool write_led(int value) {
   std::ofstream led_file(g_ledPath);

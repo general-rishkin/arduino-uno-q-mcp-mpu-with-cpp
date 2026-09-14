@@ -1,6 +1,6 @@
 #include <Arduino.h>
 
-const auto LED = LED3_R; // Use the built-in red LED on the Arduino board
+const auto LED = LED3_G; // Use the built-in red LED on the Arduino board
 
 void setup() {
   Serial.begin(115200);

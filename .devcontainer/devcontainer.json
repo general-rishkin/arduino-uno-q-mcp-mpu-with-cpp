@@ -1,6 +1,6 @@
 {
     "name": "devcontainer",
-    "postCreateCommand": "ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa",
+    "postCreateCommand": "mkdir -p ~/.ssh && ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa",
     "build": {
         "dockerfile": "Dockerfile",
         "context": "..",

@@ -4,7 +4,7 @@ set -euo pipefail
 # Upload firmware to Arduino Uno Q1 MCU
 
 USER=arduino
-IP=192.168.178.188
+IP=192.168.0.103
 
 # Deploy Application
 

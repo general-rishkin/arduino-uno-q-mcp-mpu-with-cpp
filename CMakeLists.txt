@@ -2,6 +2,18 @@ cmake_minimum_required(VERSION 3.16)
 
 project(learning_arduino_q1 LANGUAGES C CXX)
 
+set(CMAKE_IGNORE_PATH 
+    "/usr/local/lib" 
+    "/usr/local/include"
+    "/usr/lib/x86_64-linux-gnu"
+    "/usr/lib/x86_64-linux-gnu/cmake"
+    "/usr/include/x86_64-linux-gnu"
+)
+set(CMAKE_PREFIX_PATH "/usr/lib/aarch64-linux-gnu/cmake" ${CMAKE_PREFIX_PATH})
+
+# Add this exact line here:
+link_directories("/usr/lib/aarch64-linux-gnu")
+
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
